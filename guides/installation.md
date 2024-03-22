@@ -71,7 +71,7 @@ To prevent Oban from running jobs and plugins during test runs, enable
 
 ```elixir
 # config/test.exs
-config :my_app, Oban, testing: :inline
+config :my_app, Oban, testing: :inline, crontab: false
 ```
 
 Oban instances are isolated supervision trees and must be included in your
